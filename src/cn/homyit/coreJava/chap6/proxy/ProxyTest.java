@@ -71,7 +71,6 @@ class TraceHandler implements InvocationHandler {
             }
         }
         System.out.println(")");
-
         // invoke actual method
         return m.invoke(target, args);
     }
