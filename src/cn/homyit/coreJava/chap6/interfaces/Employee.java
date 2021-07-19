@@ -1,5 +1,8 @@
 package cn.homyit.coreJava.chap6.interfaces;
 
+/**
+ * @author Ziqiang CAO
+ */
 public class Employee implements Comparable<Employee> {
     private String name;
     private double salary;

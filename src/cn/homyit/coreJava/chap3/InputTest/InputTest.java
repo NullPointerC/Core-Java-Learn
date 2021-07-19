@@ -1,12 +1,9 @@
 package cn.homyit.coreJava.chap3.InputTest;
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
- * This program demonstrates console input.
- *
- * @author Cay Horstmann
- * @version 1.10 2004-02-10
+ * @author Ziqiang CAO
  */
 public class InputTest {
     public static void main(String[] args) {

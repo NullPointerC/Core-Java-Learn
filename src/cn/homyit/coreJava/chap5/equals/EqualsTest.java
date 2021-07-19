@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap5.equals;
 
 /**
- * This program demonstrates the equals method.
- *
- * @author Cay Horstmann
- * @version 1.12 2012-01-26
+ * @author Ziqiang CAO
  */
 public class EqualsTest {
     public static void main(String[] args) {

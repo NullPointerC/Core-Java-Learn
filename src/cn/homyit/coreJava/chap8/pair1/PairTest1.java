@@ -1,8 +1,7 @@
 package cn.homyit.coreJava.chap8.pair1;
 
 /**
- * @author Cay Horstmann
- * @version 1.01 2012-01-26
+ * @author Ziqiang CAO
  */
 public class PairTest1 {
     public static void main(String[] args) {

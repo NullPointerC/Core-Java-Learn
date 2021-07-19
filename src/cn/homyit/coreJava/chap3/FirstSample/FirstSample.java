@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap3.FirstSample;
 
 /**
- * This is the first sample program in Core Java Chapter 3
- *
- * @author Gary Cornell
- * @version 1.01 1997-03-22
+ * @author Ziqiang CAO
  */
 public class FirstSample {
     public static void main(String[] args) {

@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap5.inheritance;
 
 /**
- * This program demonstrates inheritance.
- *
- * @author Cay Horstmann
- * @version 1.21 2004-02-21
+ * @author Ziqiang CAO
  */
 public class ManagerTest {
     public static void main(String[] args) {

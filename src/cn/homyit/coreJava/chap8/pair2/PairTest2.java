@@ -3,8 +3,7 @@ package cn.homyit.coreJava.chap8.pair2;
 import java.time.LocalDate;
 
 /**
- * @author Cay Horstmann
- * @version 1.02 2015-06-21
+ * @author Ziqiang CAO
  */
 public class PairTest2 {
     public static void main(String[] args) {

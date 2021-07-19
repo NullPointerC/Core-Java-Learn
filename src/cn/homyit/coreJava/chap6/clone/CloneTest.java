@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap6.clone;
 
 /**
- * This program demonstrates cloning.
- *
- * @author Cay Horstmann
- * @version 1.11 2018-03-16
+ * @author Ziqiang CAO
  */
 public class CloneTest {
     public static void main(String[] args) throws CloneNotSupportedException {

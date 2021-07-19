@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap6.staticInnerClass;
 
 /**
- * This program demonstrates the use of static inner classes.
- *
- * @author Cay Horstmann
- * @version 1.02 2015-05-12
+ * @author Ziqiang CAO
  */
 public class StaticInnerClassTest {
     public static void main(String[] args) {

@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap8.pair3;
 
-import java.util.ArrayList;
-
 /**
- * @author Cay Horstmann
- * @version 1.01 2012-01-26
+ * @author Ziqiang CAO
  */
 public class PairTest3 {
     public static void main(String[] args) {

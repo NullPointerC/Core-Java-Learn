@@ -5,8 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * @author Cay Horstmann
- * @version 1.11 2018-04-10
+ * @author Ziqiang CAO
  */
 public class GenericReflectionTest {
     public static void main(String[] args) {

@@ -1,8 +1,7 @@
 package cn.homyit.coreJava.chap8.pair2;
 
 /**
- * @author Cay Horstmann
- * @version 1.00 2004-05-10
+ * @author Ziqiang CAO
  */
 public class Pair<T> {
     private T first;

@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap4.ParamTest;
 
 /**
- * This program demonstrates parameter passing in Java.
- *
- * @author Cay Horstmann
- * @version 1.01 2018-04-10
+ * @author Ziqiang CAO
  */
 public class ParamTest {
     public static void main(String[] args) {

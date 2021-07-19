@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap3.CompoundInterest;
 
 /**
- * This program shows how to store tabular data in a 2D array.
- *
- * @author Cay Horstmann
- * @version 1.40 2004-02-10
+ * @author Ziqiang CAO
  */
 public class CompoundInterest {
     public static void main(String[] args) {
@@ -14,14 +11,16 @@ public class CompoundInterest {
 
         // set interest rates to 10 . . . 15%
         double[] interestRate = new double[NRATES];
-        for (int j = 0; j < interestRate.length; j++)
+        for (int j = 0; j < interestRate.length; j++) {
             interestRate[j] = (STARTRATE + j) / 100.0;
+        }
 
         double[][] balances = new double[NYEARS][NRATES];
 
         // set initial balances to 10000
-        for (int j = 0; j < balances[0].length; j++)
+        for (int j = 0; j < balances[0].length; j++) {
             balances[0][j] = 10000;
+        }
 
         // compute interest for future years
         for (int i = 1; i < balances.length; i++) {
@@ -38,16 +37,18 @@ public class CompoundInterest {
         }
 
         // print one row of interest rates
-        for (int j = 0; j < interestRate.length; j++)
-            System.out.printf("%9.0f%%", 100 * interestRate[j]);
+        for (double v : interestRate) {
+            System.out.printf("%9.0f%%", 100 * v);
+        }
 
         System.out.println();
 
         // print balance table
         for (double[] row : balances) {
             // print table row
-            for (double b : row)
+            for (double b : row) {
                 System.out.printf("%10.2f", b);
+            }
 
             System.out.println();
         }

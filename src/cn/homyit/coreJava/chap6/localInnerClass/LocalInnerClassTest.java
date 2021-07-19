@@ -7,10 +7,7 @@ import java.awt.event.ActionListener;
 import java.time.Instant;
 
 /**
- * This program demonstrates the use of local inner classes.
- *
- * @author Cay Horstmann
- * @version 1.02 2017-12-14
+ * @author Ziqiang CAO
  */
 public class LocalInnerClassTest {
     public static void main(String[] args) {

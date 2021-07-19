@@ -3,10 +3,7 @@ package cn.homyit.coreJava.chap4.EmployeeTest;
 import java.time.*;
 
 /**
- * This program tests the Employee class.
- *
- * @author Cay Horstmann
- * @version 1.13 2018-04-10
+ * @author Ziqiang CAO
  */
 public class EmployeeTest {
     public static void main(String[] args) {
@@ -18,13 +15,15 @@ public class EmployeeTest {
         staff[2] = new Employee("Tony Tester", 40000, 1990, 3, 15);
 
         // raise everyone's salary by 5%
-        for (Employee e : staff)
+        for (Employee e : staff) {
             e.raiseSalary(5);
+        }
 
         // print out information about all Employee objects
-        for (Employee e : staff)
+        for (Employee e : staff) {
             System.out.println("name=" + e.getName() + ",salary=" + e.getSalary() + ",hireDay="
                     + e.getHireDay());
+        }
     }
 }
 

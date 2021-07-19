@@ -3,6 +3,9 @@ package cn.homyit.coreJava.chap6.clone;
 import java.util.Date;
 import java.util.GregorianCalendar;
 
+/**
+ * @author Ziqiang CAO
+ */
 public class Employee implements Cloneable {
     private String name;
     private double salary;

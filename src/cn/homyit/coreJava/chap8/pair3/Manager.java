@@ -1,5 +1,8 @@
 package cn.homyit.coreJava.chap8.pair3;
 
+/**
+ * @author Ziqiang CAO
+ */
 public class Manager extends Employee {
     private double bonus;
 

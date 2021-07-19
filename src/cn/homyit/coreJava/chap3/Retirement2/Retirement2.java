@@ -1,12 +1,9 @@
 package cn.homyit.coreJava.chap3.Retirement2;
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
- * This program demonstrates a <code>do/while</code> loop.
- *
- * @author Cay Horstmann
- * @version 1.20 2004-02-10
+ * @author Ziqiang CAO
  */
 public class Retirement2 {
     public static void main(String[] args) {

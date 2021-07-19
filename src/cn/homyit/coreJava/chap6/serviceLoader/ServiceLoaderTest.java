@@ -5,8 +5,7 @@ import java.nio.charset.*;
 import java.util.*;
 
 /**
- * @author Cay Horstmann
- * @version 1.01 2018-03-17
+ * @author Ziqiang CAO
  */
 
 public class ServiceLoaderTest {

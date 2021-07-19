@@ -2,6 +2,9 @@ package cn.homyit.coreJava.chap5.abstractClasses;
 
 import java.time.*;
 
+/**
+ * @author Ziqiang CAO
+ */
 public class Employee extends Person {
     private double salary;
     private LocalDate hireDay;
@@ -20,6 +23,7 @@ public class Employee extends Person {
         return hireDay;
     }
 
+    @Override
     public String getDescription() {
         return String.format("an employee with a salary of $%.2f", salary);
     }

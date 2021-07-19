@@ -29,8 +29,8 @@ class TypeLiteral<T> {
         if (parentType instanceof ParameterizedType) {
             type = ((ParameterizedType) parentType).getActualTypeArguments()[0];
         } else {
-           throw new UnsupportedOperationException(
-                   "Construct as new TypeLiteral&lt;. . .&gt;(){}");
+            throw new UnsupportedOperationException(
+                    "Construct as new TypeLiteral&lt;. . .&gt;(){}");
         }
     }
 
@@ -48,9 +48,9 @@ class TypeLiteral<T> {
     @Override
     public String toString() {
         if (type instanceof Class) {
-           return ((Class<?>) type).getName();
+            return ((Class<?>) type).getName();
         } else {
-           return type.toString();
+            return type.toString();
         }
     }
 
@@ -104,7 +104,7 @@ class Formatter {
                         = (Function<Object, String>) formatterForType;
                 result.append(objectFormatter.apply(f.get(obj)));
             } else {
-               result.append(f.get(obj).toString());
+                result.append(f.get(obj).toString());
             }
             result.append("\n");
         }
@@ -117,7 +117,7 @@ public class TypeLiterals {
         var result = new StringBuilder();
         for (T e : elements) {
             if (result.length() > 0) {
-               result.append(separator);
+                result.append(separator);
             }
             result.append(e.toString());
         }

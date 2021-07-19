@@ -3,10 +3,7 @@ package cn.homyit.coreJava.chap6.interfaces;
 import java.util.*;
 
 /**
- * This program demonstrates the use of the Comparable interface.
- *
- * @author Cay Horstmann
- * @version 1.30 2004-02-27
+ * @author Ziqiang CAO
  */
 public class EmployeeSortTest {
     public static void main(String[] args) {

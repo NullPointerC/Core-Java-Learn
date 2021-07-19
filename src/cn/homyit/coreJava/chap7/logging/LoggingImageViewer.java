@@ -10,10 +10,7 @@ import java.io.OutputStream;
 import java.util.logging.*;
 
 /**
- * A modification of the image viewer program that logs various events.
- *
- * @author Cay Horstmann
- * @version 1.03 2015-08-20
+ * @author Ziqiang CAO
  */
 public class LoggingImageViewer {
     public static void main(String[] args) {
@@ -117,7 +114,7 @@ class ImageViewerFrame extends JFrame {
                 logger.log(Level.FINE, "Reading file {0}", name);
                 label.setIcon(new ImageIcon(name));
             } else {
-               logger.fine("File open dialog canceled.");
+                logger.fine("File open dialog canceled.");
             }
             logger.exiting("ImageViewerFrame.FileOpenListener", "actionPerformed");
         }
@@ -150,9 +147,10 @@ class WindowHandler extends StreamHandler {
         });
     }
 
+    @Override
     public void publish(LogRecord record) {
         if (!frame.isVisible()) {
-           return;
+            return;
         }
         super.publish(record);
         flush();

@@ -3,10 +3,7 @@ package cn.homyit.coreJava.chap7.stackTrace;
 import java.util.Scanner;
 
 /**
- * A program that displays a trace feature of a recursive method call.
- *
- * @author Cay Horstmann
- * @version 1.10 2017-12-14
+ * @author Ziqiang CAO
  */
 public class StackTraceTest {
     /**
@@ -20,8 +17,11 @@ public class StackTraceTest {
         var walker = StackWalker.getInstance();
         walker.forEach(System.out::println);
         int r;
-        if (n <= 1) r = 1;
-        else r = n * factorial(n - 1);
+        if (n <= 1) {
+            r = 1;
+        } else {
+            r = n * factorial(n - 1);
+        }
         System.out.println("return " + r);
         return r;
     }

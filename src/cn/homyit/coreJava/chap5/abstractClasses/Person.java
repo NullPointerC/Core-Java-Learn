@@ -1,5 +1,8 @@
 package cn.homyit.coreJava.chap5.abstractClasses;
 
+/**
+ * @author Ziqiang CAO
+ */
 public abstract class Person {
     public abstract String getDescription();
 

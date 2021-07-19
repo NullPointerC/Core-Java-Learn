@@ -1,7 +1,10 @@
 package cn.homyit.coreJava.chap5.arrayList;
 
-import java.time.*;
+import java.time.LocalDate;
 
+/**
+ * @author Ziqiang CAO
+ */
 public class Employee {
     private String name;
     private double salary;

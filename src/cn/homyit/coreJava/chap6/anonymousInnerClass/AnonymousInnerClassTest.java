@@ -1,16 +1,13 @@
 package cn.homyit.coreJava.chap6.anonymousInnerClass;
 
-import java.awt.*;
-import java.awt.event.*;
-import java.time.*;
-
 import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.time.Instant;
 
 /**
- * This program demonstrates anonymous inner classes.
- *
- * @author Cay Horstmann
- * @version 1.12 2017-12-14
+ * @author Ziqiang CAO
  */
 public class AnonymousInnerClassTest {
     public static void main(String[] args) {

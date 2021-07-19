@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap4.StaticTest;
 
 /**
- * This program demonstrates static methods.
- *
- * @author Cay Horstmann
- * @version 1.02 2008-04-10
+ * @author Ziqiang CAO
  */
 public class StaticTest {
     public static void main(String[] args) {

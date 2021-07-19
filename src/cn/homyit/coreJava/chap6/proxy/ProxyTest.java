@@ -7,10 +7,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * This program demonstrates the use of proxies.
- *
- * @author Cay Horstmann
- * @version 1.01 2018-04-10
+ * @author Ziqiang CAO
  */
 public class ProxyTest {
     public static void main(String[] args) {

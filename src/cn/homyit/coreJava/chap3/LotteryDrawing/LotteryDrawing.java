@@ -1,12 +1,10 @@
 package cn.homyit.coreJava.chap3.LotteryDrawing;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 /**
- * This program demonstrates array manipulation.
- *
- * @author Cay Horstmann
- * @version 1.20 2004-02-10
+ * @author Ziqiang CAO
  */
 public class LotteryDrawing {
     public static void main(String[] args) {
@@ -20,8 +18,9 @@ public class LotteryDrawing {
 
         // fill an array with numbers 1 2 3 . . . n
         int[] numbers = new int[n];
-        for (int i = 0; i < numbers.length; i++)
+        for (int i = 0; i < numbers.length; i++) {
             numbers[i] = i + 1;
+        }
 
         // draw k numbers and put them into a second array
         int[] result = new int[k];
@@ -40,7 +39,8 @@ public class LotteryDrawing {
         // print the sorted array
         Arrays.sort(result);
         System.out.println("Bet the following combination. It'll make you rich!");
-        for (int r : result)
+        for (int r : result) {
             System.out.println(r);
+        }
     }
 }

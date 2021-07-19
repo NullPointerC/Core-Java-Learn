@@ -1,13 +1,10 @@
 package cn.homyit.coreJava.chap5.arrays;
 
-import java.lang.reflect.*;
-import java.util.*;
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 /**
- * This program demonstrates the use of reflection for manipulating arrays.
- *
- * @author Cay Horstmann
- * @version 1.2 2012-05-04
+ * @author Ziqiang CAO
  */
 public class CopyOfTest {
     public static void main(String[] args) {
@@ -48,7 +45,9 @@ public class CopyOfTest {
      */
     public static Object goodCopyOf(Object a, int newLength) {
         Class cl = a.getClass();
-        if (!cl.isArray()) return null;
+        if (!cl.isArray()) {
+            return null;
+        }
         Class componentType = cl.getComponentType();
         int length = Array.getLength(a);
         Object newArray = Array.newInstance(componentType, newLength);

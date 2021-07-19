@@ -1,15 +1,11 @@
 package cn.homyit.coreJava.chap6.lambda;
 
-import java.util.*;
-
 import javax.swing.*;
-import javax.swing.Timer;
+import java.util.Arrays;
+import java.util.Date;
 
 /**
- * This program demonstrates the use of lambda expressions.
- *
- * @author Cay Horstmann
- * @version 1.0 2015-05-12
+ * @author Ziqiang CAO
  */
 public class LambdaTest {
     public static void main(String[] args) {

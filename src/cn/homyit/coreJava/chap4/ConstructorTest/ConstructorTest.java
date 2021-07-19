@@ -1,12 +1,9 @@
 package cn.homyit.coreJava.chap4.ConstructorTest;
 
-import java.util.*;
+import java.util.Random;
 
 /**
- * This program demonstrates object construction.
- *
- * @author Cay Horstmann
- * @version 1.02 2018-04-10
+ * @author Ziqiang CAO
  */
 public class ConstructorTest {
     public static void main(String[] args) {
@@ -18,18 +15,15 @@ public class ConstructorTest {
         staff[2] = new Employee();
 
         // print out information about all Employee objects
-        for (Employee e : staff)
+        for (Employee e : staff) {
             System.out.println("name=" + e.getName() + ",id=" + e.getId() + ",salary="
                     + e.getSalary());
+        }
     }
 }
 
 class Employee {
     private static int nextId;
-
-    private int id;
-    private String name = ""; // instance field initialization
-    private double salary;
 
     // static initialization block
     static {
@@ -37,6 +31,10 @@ class Employee {
         // set nextId to a random number between 0 and 9999
         nextId = generator.nextInt(10000);
     }
+
+    private int id;
+    private String name = ""; // instance field initialization
+    private double salary;
 
     // object initialization block
     {

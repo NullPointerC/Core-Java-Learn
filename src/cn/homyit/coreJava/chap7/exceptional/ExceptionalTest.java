@@ -4,8 +4,7 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 /**
- * @author Cay Horstmann
- * @version 1.12 2017-12-14
+ * @author Ziqiang CAO
  */
 public class ExceptionalTest {
     public static void main(String[] args) {
@@ -16,8 +15,11 @@ public class ExceptionalTest {
         // test a stack for emptiness ntry times
         System.out.println("Testing for empty stack");
         long start = System.currentTimeMillis();
-        for (i = 0; i <= ntry; i++)
-            if (!stack.empty()) stack.pop();
+        for (i = 0; i <= ntry; i++) {
+            if (!stack.empty()) {
+                stack.pop();
+            }
+        }
         long end = System.currentTimeMillis();
         System.out.println((end - start) + " milliseconds");
 

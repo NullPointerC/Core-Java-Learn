@@ -1,12 +1,9 @@
 package cn.homyit.coreJava.chap3.LotteryOdds;
 
-import java.util.*;
+import java.util.Scanner;
 
 /**
- * This program demonstrates a <code>for</code> loop.
- *
- * @author Cay Horstmann
- * @version 1.20 2004-02-10
+ * @author Ziqiang CAO
  */
 public class LotteryOdds {
     public static void main(String[] args) {
@@ -23,9 +20,9 @@ public class LotteryOdds {
          */
 
         int lotteryOdds = 1;
-        for (int i = 1; i <= k; i++)
+        for (int i = 1; i <= k; i++) {
             lotteryOdds = lotteryOdds * (n - i + 1) / i;
-
+        }
         System.out.println("Your odds are 1 in " + lotteryOdds + ". Good luck!");
     }
 }

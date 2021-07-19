@@ -3,10 +3,7 @@ package cn.homyit.coreJava.chap3.Retirement;
 import java.util.*;
 
 /**
- * This program demonstrates a <code>while</code> loop.
- *
- * @author Cay Horstmann
- * @version 1.20 2004-02-10
+ * @author Ziqiang CAO
  */
 public class Retirement {
     public static void main(String[] args) {

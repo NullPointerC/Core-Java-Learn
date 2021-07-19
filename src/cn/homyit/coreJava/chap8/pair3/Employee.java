@@ -2,6 +2,9 @@ package cn.homyit.coreJava.chap8.pair3;
 
 import java.time.LocalDate;
 
+/**
+ * @author Ziqiang CAO
+ */
 public class Employee {
     private String name;
     private double salary;

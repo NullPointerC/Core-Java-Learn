@@ -4,10 +4,7 @@ import java.math.*;
 import java.util.*;
 
 /**
- * This program uses big numbers to compute the odds of winning the grand prize in a lottery.
- *
- * @author Cay Horstmann
- * @version 1.20 2004-02-10
+ * @author Ziqiang CAO
  */
 public class BigIntegerTest {
     public static void main(String[] args) {
@@ -25,9 +22,10 @@ public class BigIntegerTest {
 
         BigInteger lotteryOdds = BigInteger.valueOf(1);
 
-        for (int i = 1; i <= k; i++)
+        for (int i = 1; i <= k; i++) {
             lotteryOdds = lotteryOdds.multiply(BigInteger.valueOf(n - i + 1)).divide(
                     BigInteger.valueOf(i));
+        }
 
         System.out.println("Your odds are 1 in " + lotteryOdds + ". Good luck!");
     }

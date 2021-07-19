@@ -1,10 +1,7 @@
 package cn.homyit.coreJava.chap5.abstractClasses;
 
 /**
- * This program demonstrates abstract classes.
- *
- * @author Cay Horstmann
- * @version 1.01 2004-02-21
+ * @author Ziqiang CAO
  */
 public class PersonTest {
     public static void main(String[] args) {

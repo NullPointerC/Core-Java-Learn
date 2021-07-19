@@ -1,13 +1,13 @@
 package cn.homyit.coreJava.chap5.resources;
 
-import java.io.*;
-import java.net.*;
-import java.nio.charset.*;
 import javax.swing.*;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
 
 /**
- * @author Cay Horstmann
- * @version 1.5 2018-03-15
+ * @author Ziqiang CAO
  */
 public class ResourceTest {
     public static void main(String[] args) throws IOException {
