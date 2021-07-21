@@ -19,7 +19,9 @@ public class CircularArrayQueueTest {
         q.remove();
         q.add("Fifi");
         q.remove();
-        for (String s : q) System.out.println(s);
+        for (String s : q) {
+            System.out.println(s);
+        }
     }
 }
 
@@ -45,6 +47,7 @@ class CircularArrayQueue<E> extends AbstractQueue<E> {
         tail = 0;
     }
 
+    @Override
     public boolean offer(E newElement) {
         assert newElement != null;
         if (count < elements.length) {
@@ -53,12 +56,16 @@ class CircularArrayQueue<E> extends AbstractQueue<E> {
             count++;
             modcount++;
             return true;
-        } else
+        } else {
             return false;
+        }
     }
 
+    @Override
     public E poll() {
-        if (count == 0) return null;
+        if (count == 0) {
+            return null;
+        }
         E r = peek();
         head = (head + 1) % elements.length;
         count--;
@@ -66,16 +73,21 @@ class CircularArrayQueue<E> extends AbstractQueue<E> {
         return r;
     }
 
+    @Override
     @SuppressWarnings("unchecked")
     public E peek() {
-        if (count == 0) return null;
+        if (count == 0) {
+            return null;
+        }
         return (E) elements[head];
     }
 
+    @Override
     public int size() {
         return count;
     }
 
+    @Override
     public Iterator<E> iterator() {
         return new QueueIterator();
     }
@@ -88,20 +100,26 @@ class CircularArrayQueue<E> extends AbstractQueue<E> {
             modcountAtConstruction = modcount;
         }
 
+        @Override
         @SuppressWarnings("unchecked")
         public E next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             var r = (E) elements[(head + offset) % elements.length];
             offset++;
             return r;
         }
 
+        @Override
         public boolean hasNext() {
-            if (modcount != modcountAtConstruction)
+            if (modcount != modcountAtConstruction) {
                 throw new ConcurrentModificationException();
+            }
             return offset < count;
         }
 
+        @Override
         public void remove() {
             throw new UnsupportedOperationException();
         }
